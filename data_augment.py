@@ -76,6 +76,19 @@ for i in range(total_files):
         for bbox in out_bboxes:
             f.write('0 {:.6f} {:.6f} {:.6f} {:.6f}\n'.format(*bbox))  # Assuming class 0
 
+    result3 = A.ChannelShuffle(p=1)(image=image,bboxes=bboxes,BboxesParams=A.BboxParams(format='yolo'))
+
+    out_img = result3['image']
+    out_bboxes = result3.get('bboxes', [])
+
+    out_img_path = f'datasets/coins/all_data/augment_images/sample{str(total_files+i+3).zfill(3)}.jpg'
+    cv2.imwrite(out_img_path, out_img)
+
+    out_label_path = f'datasets/coins/all_data/augment_labels/sample{str(total_files+i+3).zfill(3)}.txt'
+    with open(out_label_path, 'w') as f:
+        for bbox in out_bboxes:
+            f.write('0 {:.6f} {:.6f} {:.6f} {:.6f}\n'.format(*bbox))  # Assuming class 0
+
     transform = A.Compose([
     A.RandomCrop(width=256, height=256, p=1),
     A.HorizontalFlip(p=0.5),
@@ -87,10 +100,10 @@ for i in range(total_files):
         out_img = result3['image']
         out_bboxes = result3.get('bboxes', [])
 
-        out_img_path = f'datasets/coins/all_data/augment_images/sample{str(total_files+i+3+j).zfill(3)}.jpg'
+        out_img_path = f'datasets/coins/all_data/augment_images/sample{str(total_files+i+4+j).zfill(3)}.jpg'
         cv2.imwrite(out_img_path, out_img)
 
-        out_label_path = f'datasets/coins/all_data/augment_labels/sample{str(total_files+i+3+j).zfill(3)}.txt'
+        out_label_path = f'datasets/coins/all_data/augment_labels/sample{str(total_files+i+4+j).zfill(3)}.txt'
         with open(out_label_path, 'w') as f:
             for bbox in out_bboxes:
                 f.write('0 {:.6f} {:.6f} {:.6f} {:.6f}\n'.format(*bbox))  # Assuming class 0
