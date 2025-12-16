@@ -1,6 +1,0 @@
-日本円硬貨画像認識
-参考文献
-中央穴の分類
-・"https://qiita.com/spc_ehara/items/e627f5633d0e9d98a39a","https://qiita.com/spc_ehara/items/b0c913a89877615d30b2"
-Alubmentation
-・"https://tech.aru-zakki.com/how-to-use-albumentation/"
