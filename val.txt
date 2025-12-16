@@ -1,0 +1,12 @@
+datasets/coins/all_data/images\sample040.jpg
+datasets/coins/all_data/images\sample024.jpg
+datasets/coins/all_data/images\sample001.jpg
+datasets/coins/all_data/images\sample036.jpg
+datasets/coins/all_data/images\sample047.jpg
+datasets/coins/all_data/images\sample025.jpeg
+datasets/coins/all_data/images\sample015.jpg
+datasets/coins/all_data/images\sample013.jpg
+datasets/coins/all_data/images\sample014.jpg
+datasets/coins/all_data/images\sample060.jpg
+datasets/coins/all_data/images\sample035.jpeg
+datasets/coins/all_data/images\sample045.jpg

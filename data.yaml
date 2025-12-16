@@ -1,0 +1,6 @@
+path: D:\Mlab\my_project\datasets\coins
+train: images/train
+val: images/val
+
+nc: 6
+names: ['1', '5', '10', '50', '100', '500']
