@@ -1,0 +1,3 @@
+best.pt
+runs/detect/train59(YOLO11x,epoch=30)/weights/last.pt
+yolo11x.pt
