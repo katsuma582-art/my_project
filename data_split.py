@@ -4,8 +4,8 @@ import numpy as np
 import os
 import random
 
-src_dir = 'datasets/coins/all_data/augment_images'
-labels_src_dir = 'datasets/coins/all_data/augment_labels'
+src_dir = 'datasets/all_data/images'
+labels_src_dir = 'datasets/all_data/labels'
 
 # collect available image files (keep extension) and sort
 exts = ('.jpg', '.jpeg', '.png')
@@ -30,10 +30,10 @@ print('train indices:', train_idx)
 import shutil
 
 # destination directories for validation (images and labels)
-val_img_dst = 'datasets/coins/images/val'
-val_lbl_dst = 'datasets/coins/labels/val'
-train_img_dst = 'datasets/coins/images/train'
-train_lbl_dst = 'datasets/coins/labels/train'
+val_img_dst = 'datasets/images/val'
+val_lbl_dst = 'datasets/labels/val'
+train_img_dst = 'datasets/images/train'
+train_lbl_dst = 'datasets/labels/train'
 
 os.makedirs(val_img_dst, exist_ok=True)
 os.makedirs(val_lbl_dst, exist_ok=True)
