@@ -3,7 +3,7 @@ import os
 from PIL import Image
 
 
-model=YOLO("best.pt")
+model=YOLO("yolo11n.pt")
 
 print(model.names)
 
