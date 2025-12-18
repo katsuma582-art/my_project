@@ -4,4 +4,3 @@
 ・"https://qiita.com/spc_ehara/items/e627f5633d0e9d98a39a","https://qiita.com/spc_ehara/items/b0c913a89877615d30b2"
 Alubmentation
 ・"https://tech.aru-zakki.com/how-to-use-albumentation/"
-・"https://qiita.com/Takayoshi_Makabe/items/79c8a5ba692aa94043f7"
