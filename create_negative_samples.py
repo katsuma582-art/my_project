@@ -1,14 +1,13 @@
 import os
 import shutil
+folder_path = "datasets/all_data/images"
+total_files = sum([len(files) for _, _, files in os.walk(folder_path)])
 
 # negative画像のパスをリストに追加
 negative_images = [
     # 例: 'datasets/coins/negative_images/neg1.jpg',
     # ユーザーがここにパスを追加
-]+ [f'datasets\\all_data\\images\\sample{str(110+i).zfill(3)}.jpg' for i in range(4)]
- 
-# + [f'datasets\\all_data\\images\\sample{str(73+i).zfill(3)}.jpg' for i in range(15)]
-# + [f'datasets\\all_data\\images\\sample{str(43+i).zfill(3)}.jpg' for i in range(4)]
+] + [f'datasets\\all_data\\images\\sample{str(i).zfill(3)}.jpg' for i in range(total_files)]
 
 for img_path in negative_images:
     if os.path.exists(img_path):
