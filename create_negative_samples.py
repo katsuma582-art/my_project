@@ -5,10 +5,7 @@ import shutil
 negative_images = [
     # 例: 'datasets/coins/negative_images/neg1.jpg',
     # ユーザーがここにパスを追加
-]+ [f'datasets\\all_data\\images\\sample{str(110+i).zfill(3)}.jpg' for i in range(4)]
- 
-# + [f'datasets\\all_data\\images\\sample{str(73+i).zfill(3)}.jpg' for i in range(15)]
-# + [f'datasets\\all_data\\images\\sample{str(43+i).zfill(3)}.jpg' for i in range(4)]
+] + [f'datasets\\coins\\all_data\\images\\sample{str(43+i).zfill(3)}.jpg' for i in range(58)]
 
 for img_path in negative_images:
     if os.path.exists(img_path):
@@ -17,7 +14,7 @@ for img_path in negative_images:
         # # ベース名を取得
         base_name = os.path.splitext(os.path.basename(img_path))[0]
         # # 空のラベルファイルを作成
-        label_path = f'datasets/all_data/labels/{base_name}.txt'
+        label_path = f'datasets/coins/all_data/labels/{base_name}.txt'
         with open(label_path, 'w') as f:
             pass  # 空ファイル
         print(f'Copied {img_path} to train and created empty label {label_path}')

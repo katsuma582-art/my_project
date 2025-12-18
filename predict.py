@@ -7,9 +7,9 @@ model=YOLO("best.pt")
 
 print(model.names)
 
-im1 = Image.open("test_sample0.jpg")
-im2 = Image.open("test_sample1.jpg")
-im3 = Image.open("test_sample2.jpg")
+im1 = Image.open("test_coin.png")
+im2 = Image.open("test_coin2.jpg")
+im3 = Image.open("test_coin3.jpg")
 im4 = Image.open("test_none.jpg")
 results1 = model.predict(source=im1,conf=0.7, iou=0.45, save=True)
 
