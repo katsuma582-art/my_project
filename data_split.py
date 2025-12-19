@@ -69,4 +69,3 @@ for idx in valu_idx:
  
 for idx in train_idx:
     move_sample_by_index(idx, train_img_dst, train_lbl_dst)
-    
